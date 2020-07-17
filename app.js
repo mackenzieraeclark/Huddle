@@ -73,7 +73,7 @@ function engineerInput() {
         {
           type: "input",
           message: "What is this engineer's name?",
-          name: "name"
+          name: "name",
         },
         {
           type: "input",
@@ -83,7 +83,7 @@ function engineerInput() {
         {
           type: "input",
           message: "What is this engineer's email?",
-          name: "email"
+          name: "email",
         },
         {
           type: "input",
@@ -91,7 +91,7 @@ function engineerInput() {
           name: "github",
         },
       ]).then(function(answer) {
-        let engineer = new Engineer(answer.name, answer.id, answer.email, answer.GitHub)
+        let engineer = new Engineer(answer.name, answer.id, answer.email, answer.github)
         team.push(engineer);
     
         // Return to add more employees
